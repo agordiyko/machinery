@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Стартовый шаблон</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+	<header class="header">
+    <div class="container">
+        <div class="header__row">
+            <a href="index.html" class="header__logo">
+                <img src="img/icons/logo.svg" alt="L.K. Machinery">
+            </a>
+            <div class="header__right">
+                <div class="header__select">
+                    <select id="standard-select">
+                        <option value="0">+7 (495) 558-61-79</option>
+                        <option value="1">+7 (490) 558-61-79</option>
+                    </select>
+                </div>
+                <button class="header__popup js-open-modal" data-modal="1">
+                    Оставить заявку
+                </button>
+                <button class="header__menu js-mobile-nav-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="mobile-nav">
+	<div class="mobile-nav__top">
+		<ul class="mobile-nav__list">
+			<li><a href="#" class="link active">Оборудование</a></li>
+			<li><a href="#" class="link">О компании</a></li>
+			<li><a href="#" class="link">Сервис</a></li>
+			<li><a href="#" class="link">Новости</a></li>
+			<li><a href="#" class="link">Контакты</a></li>
+		</ul>
+		<button class="js-mobile-nav-btn">
+			<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M0.769231 19.2307C0.344396 18.8058 0.344396 18.117 0.76923 17.6922L17.6923 0.769116C18.1171 0.344282 18.8059 0.344281 19.2308 0.769116C19.6556 1.19395 19.6556 1.88274 19.2308 2.30758L2.30769 19.2307C1.88286 19.6555 1.19406 19.6555 0.769231 19.2307Z" fill="white"/>
+				<path d="M19.2308 19.2307C19.6556 18.8058 19.6556 18.117 19.2308 17.6922L2.3077 0.769116C1.88287 0.344282 1.19408 0.344281 0.769241 0.769116C0.344407 1.19395 0.344406 1.88274 0.769241 2.30758L17.6923 19.2307C18.1171 19.6555 18.8059 19.6555 19.2308 19.2307Z" fill="white"/>
+			</svg>
+		</button>
+	</div>
+	<div class="mobile-nav__middle">
+		<div class="mobile-nav__left">
+			<div class="mobile-nav__title">Обрабатывающие центры</div>
+			<div class="mobile-nav__sublist">
+				<li><a href="#">Вертикальные ОЦ</a></li>
+				<li><a href="#">Токарные ОЦ</a></li>
+				<li><a href="#">Сверильно-фрезерные ОЦ</a></li>
+				<li><a href="#">5-ти осевые ОЦ</a></li>
+				<li><a href="#">Горизонтальные ОЦ</a></li>
+				<li><a href="#">Портальные ОЦ</a></li>
+			</div>
+		</div>
+		<div class="mobile-nav__right">
+			<div class="mobile-nav__title">Машины ЛПД</div>
+			<div class="mobile-nav__sublist">
+				<li><a href="#">IMPRESS III</a></li>
+				<li><a href="#">IMPRESS PLUS</a></li>
+				<li><a href="#">AVIS II</a></li>
+				<li><a href="#">CLASSIK III</a></li>
+			</div>
+		</div>
+	</div>
+	<div class="mobile-nav__bottom">
+		<div class="mobile-nav__title">Термопластавтоматы</div>
+			<ul class="mobile-nav__sublist">
+				<li><a href="#">POTENZA</a></li>
+				<li><a href="#">FORZA</a></li>
+				<li><a href="#">LENA</a></li>
+				<li><a href="#">EFFECTA</a></li>
+				<li><a href="#">ELETTRICA</a></li>
+				<li><a href="#">DOPPIO</a></li>
+				<li><a href="#">VARIA</a></li>
+			</ul>
+	</div>
+	<div class="mobile-nav__contact">
+		<div class="mobile-nav__wrap">
+			<ul class="mobile-nav__phones">
+				<li><a href="tel:84955586178">+7 (495) 558-61-78</a></li>
+				<li><a href="tel:84955586179">+7 (495) 558-61-79</a></li>
+			</ul>
+			<ul class="mobile-nav__emails">
+				<li><a href="mailto:info@lkmachinery.ru">info@lkmachinery.ru</a></li>
+				<li><a href="lk.world">lk.world</a></li>
+			</ul>
+		</div>
+		<div class="mobile-nav__adress">
+			109316, г. Москва, Волгоградский пр-т, д. 46Б, к. 1, эт. 5, пом. 52, оф. 504
+		</div>
+	</div>
+</section>
+
+	<main class="main">
+		<section class="hero">
+    <div class="container">
+        <div class="hero__top">
+            <div class="hero__wrap">
+                <h1 class="hero__title">L.K. Machinery -</h1>
+                <div class="hero__about">производство обрабатывающих центров с ЧПУ, термопластавтоматов и машин для
+                    литья цветных металлов под давлением</div>
+            </div>
+            <div class="hero__box">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next">
+                    <div class="autoplay-progress">
+                        <svg viewBox="0 0 48 48">
+                            <circle cx="24" cy="24" r="20"></circle>
+                        </svg>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="hero-swiper swiper">
+            <div class="hero-swiper__wrapper swiper-wrapper">
+                <div class="hero-swiper__slide swiper-slide">
+                    <img src="img/main/hero/hero-bg-1.png" alt="Оборудование L.K. Machinery">
+                </div>
+                <div class="hero-swiper__slide swiper-slide">
+                    <img src="img/main/hero/hero-bg-2.png" alt="Оборудование L.K. Machinery">
+                </div>
+                <div class="hero-swiper__slide swiper-slide">
+                    <img src="img/main/hero/hero-bg-3.png" alt="Оборудование L.K. Machinery">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero__bottom">
+        <div class="container">
+            <div class="hero__holder">
+                <div class="hero__item">
+                    <div class="hero__subtitle">Почему мы?</div>
+                    <div class="hero__text">Успех клиентов — это наша цель. Мы собрали лучшую команду с многолетним
+                        опытом. Наши
+                        менеджеры и инженеры быстро и качественно выполнят любые поставленные задачи.</div>
+                </div>
+                <div class="hero__item">
+                    <div class="hero__subtitle">Склад в Москве</div>
+                    <div class="hero__text">Постоянное наличии на складе в Москве обрабатывающих центров с ЧПУ,
+                        термопластавтоматов, периферийного оборудования и запчастей.</div>
+                </div>
+                <div class="hero__item">
+                    <div class="hero__subtitle">Комплексные решения</div>
+                    <div class="hero__text">Команда L.K. Machinery обладает богатым мировым опытом комплексных поставок
+                        обрабатывающих центров с ЧПУ и литьевого оборудования на предприятия широкого производства.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+		<section class="equipment">
+    <div class="equipment__top">
+        <div class="container">
+            <div class="equipment__header">
+                <h2 class="equipment__title">Оборудование</h2>
+                <div class="equipment__text">
+                    L.K. является одним из крупнейших производителей обрабатывающих центров с ЧПУ, термопластавтоматов
+                    и оборудования для литья цветных металлов. Наше оборудованние применяется в автомобилестроении
+                    и приборостроении, энергетической отрасли, а также иных областях промышленности. Большой опыт
+                    проектирования и разработки делают компанию L.K. одним из лидеров в отрасли.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="equipment__bottom">
+        <div class="container">
+            <div class="equipment__content">
+                <div class="equipment__item">
+                    <a href="#" class="equipment__link link">Термопластавтоматы</a>
+                    <div class="equipment__image">
+                        <img src="img/main/equip/img-1.png" alt="Термопластавтоматы">
+                    </div>
+                </div>
+                <div class="equipment__item">
+                    <a href="#" class="equipment__link link">Оборудование для литья цветных металлов под давлением</a>
+                    <div class="equipment__image">
+                        <img src="img/main/equip/img-2.png" alt="Оборудование для литья цветных металлов под давлением">
+                    </div>
+                </div>
+                <div class="equipment__item">
+                    <a href="#" class="equipment__link link">Обрабатывающие центры</a>
+                    <div class="equipment__image">
+                        <img src="img/main/equip/img-3.png" alt="Обрабатывающие центры">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+		<section class="help">
+    <div class="container">
+        <div class="help__top">
+            <div class="help__left">
+                <h2 class="help__title"><span>Поможем</span> с подбором оборудования</h2>
+                <div class="help__about">Специалист свяжется с вами и расскажет о возможностях нашего оборудования, предложит эффективное решение для вашего производства</div>
+                <button class="help__btn js-open-modal" data-modal="1">Получить консультацию</button>
+                <div class="help__benefits">
+                    <div class="help__subtitle title">Преимущества</div>
+                    <div class="help__item">
+                        <div class="help__head">Сервис</div>
+                        <div class="help__context text">В рамках своей деятельности мы осуществляем гарантийное и пост гарантийное обслуживание нашего оборудования. Склад запасных частей и расходных материалов позволяет своевременно осуществлять сервисную деятельность.</div>
+                    </div>
+                    <div class="help__item">
+                        <div class="help__head">8 заводов в 3 странах</div>
+                        <div class="help__context text">Обрабатывающие центры с ЧПУ производятся на крупнейшем заводе L.K. на Тайвани. Термопластавтоматы и машины для литья цветных металлов под давлением производятся на крупнейших заводах L.K. в Китае и на заводе IDRA в Италии. Станины и другие узлы оборудования L.K. Machinery отливаются и обрабатываются на собственных заводах.</div>
+                    </div>
+                    <div class="help__item">
+                        <div class="help__head">Приглашаем на завод L.K. Machinery</div>
+                        <div class="help__context text">Мы стремимся как можно ближе познакомить наших Клиентов с инновациями, технологиями и культурой производства заводов L.K. Machinery. Мы будем рады пригласить Вас на свои заводы.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="help__right"></div>
+        </div>
+    </div>
+    <div class="help__clients">
+        <div class="help__swiper swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/main/clients/client-1.png" alt="Клиенты L.K. Machinery">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/main/clients/client-2.png" alt="Клиенты L.K. Machinery">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/main/clients/client-3.png" alt="Клиенты L.K. Machinery">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/main/clients/client-4.png" alt="Клиенты L.K. Machinery">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/main/clients/client-5.png" alt="Клиенты L.K. Machinery">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/main/clients/client-6.png" alt="Клиенты L.K. Machinery">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/main/clients/client-7.png" alt="Клиенты L.K. Machinery">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/main/clients/client-8.png" alt="Клиенты L.K. Machinery">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/main/clients/client-9.png" alt="Клиенты L.K. Machinery">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/main/clients/client-10.png" alt="Клиенты L.K. Machinery">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/main/clients/client-10.png" alt="Клиенты L.K. Machinery">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/main/clients/client-11.png" alt="Клиенты L.K. Machinery">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/main/clients/client-12.png" alt="Клиенты L.K. Machinery">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/main/clients/client-13.png" alt="Клиенты L.K. Machinery">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/main/clients/client-14.png" alt="Клиенты L.K. Machinery">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/main/clients/client-15.png" alt="Клиенты L.K. Machinery">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/main/clients/client-16.png" alt="Клиенты L.K. Machinery">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+		<section class="about">
+    <div class="about__top">
+        <div class="container">
+            <div class="about__holder">
+                <div class="about__left">
+                    <h2 class="about__title title">О компании L.K. Machinery -</h2>
+                    <div class="about__type">Тип компании:</div>
+                    <p class="about__info text">Открытое акционерное общество с акциями, размещенными на Гонконгской фондовой бирже</p>
+                    <p class="about__info text">ООО «ЛК Машинери Рус» является официальным представительством и дочерней организацией корпорации L.K.Machinery.</p>
+                    <a href="#" class="about__link btn">О нас</a>
+                </div>
+                <div class="about__right">
+                    <div class="about__text text">Дата основания компании: 1979 г. мистером Liu Siong Song. Производственные площадки: 6 заводов в Китае, 1 завод на Тайване, 1 завод в Италии (Idra srl). ООО «ЛК Машинери Рус ведет свою деятельность по основным направлениям:</div>
+                    <div class="about__equip">
+                        <div class="about__item">
+                            <div class="about__brand">CNC</div>
+                            <div class="about__name">Металлорежущее оборудование с ЧПУ</div>
+                        </div>
+                        <div class="about__item">
+                            <div class="about__brand">IMM</div>
+                            <div class="about__name">Термопластавтоматы</div>
+                        </div>
+                        <div class="about__item">
+                            <div class="about__brand">DCM</div>
+                            <div class="about__name">Оборудование для литья цветных металлов под давлением</div>
+                        </div>
+                    </div>
+                    <div class="about__benefits">
+                        <div class="about__line">
+                            <span>800 000 м²</span> Общая площадь производственных площадок
+                        </div>
+                        <div class="about__line">
+                            <span>60 офисов</span> Офисы продаж более чем 20 странах
+                        </div>
+                        <div class="about__line">
+                            <span>> 3 600</span> Cотрудников по всему миру
+                        </div>
+                        <div class="about__line">
+                            <span>700 млн $</span> Оборот компании за 2019 год
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about__bottom"></div>
+</section>
+		<section class="warranty">
+    <div class="container">
+        <div class="warranty__holder">
+            <div class="warranty__left">
+                <h2 class="warranty__title title">Гарантия на основные узлы оборудования L.K. Machinery -</h2>
+                <div class="warranty__year">2 года</div>
+                <div class="warranty__info">Мы окажем полную техническую поддержку вашего производства</div>
+                <div class="warranty__item">
+                    <div class="warranty__header">Осуществление  планировки производственной площади</div>
+                    <div class="warranty__text text">Сервисные инженеры L.K. Machinery имеют многолетний опыт монтажных и пусконаладочных работ, опыт ремонта и периодического обслуживания станков с ЧПУ и литьевого оборудования.</div>
+                </div>
+                <div class="warranty__item warranty__item_key">
+                    <div class="warranty__header">Реализация проектов «под ключ»</div>
+                    <div class="warranty__text text">Команда L.K. Machinery обладает богатым мировым опытом комплексных поставок обрабатывающих центров с ЧПУ и литьевого оборудования на предприятия широкого производства.</div>
+                </div>
+                <div class="warranty__item">
+                    <div class="warranty__header">Комплект поставки / Доставка</div>
+                    <div class="warranty__text text">Русифицированный контроллер, комплект документации на русском языке, вспомогательный инструмент. Мы осуществляем доставку нашего оборудования по России и СНГ.</div>
+                </div>
+                <div class="warranty__item">
+                    <div class="warranty__header">Cервисное обслуживание</div>
+                    <div class="warranty__text text">В рамках своей деятельности мы осуществляем гарантийное и пост гарантийное обслуживание нашего оборудования. Склад запасных частей и расходных материалов позволяет своевременно осуществлять сервисную деятельность.</div>
+                </div>
+                <div class="warranty__item">
+                    <div class="warranty__header">Складская программа</div>
+                    <div class="warranty__text text">Постоянное наличии на складе в Москве обрабатывающих центров с ЧПУ и термопластавтоматов, периферийного оборудования и промышленных роботов. Проверить наличие на складе.</div>
+                </div>
+            </div>
+            <div class="warranty__right"></div>
+        </div>
+    </div>
+</section>
+		<section class="call-me">
+    <div class="container">
+        <h2 class="call-me__title title">СВЯЖИТЕСЬ С НАМИ ДЛЯ КОНСУЛЬТАЦИИ</h2>
+    </div>
+    <form class="call-me__form call-form">
+        <div class="call-form__wrapper">
+            <div class="container">
+                <div class="call-form__holder">
+                    <div class="call-form__item">
+                        <input type="text" class="call-form__input" placeholder="ФИО">
+                    </div>
+                    <div class="call-form__item">
+                        <input type="text" class="call-form__input tel" placeholder="+7 (812) 335-48-05">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="call-form__bottom">
+            <div class="container">
+                <div class="call-form__block">
+                    <a href="#" class="form-call__policy">Политика конфиденциальности</a>
+			        <input type="submit" class="form-call__submit btn" value="Получить консультацию">
+                </div>
+            </div>
+        </div>
+    </form>
+</section>
+		<div class="main__wrapper">
+			<section class="usage">
+    <div class="container">
+        <div class="usage__wrapper">
+            <h2 class="usage__title title">Области применения</h2>
+            <div class="usage__holder">
+                <div class="usage__left accordion">
+                    <div class="accordion__item">
+                        <button class="accordion__btn">Автокомпоненты<div><span></span><span></span></div></button>
+                        <div class="accordion__wrapper">
+                            <div class="accordion__panel">
+                                <p>С каждым годом растет потребление пластмасс в области производства автомобилей</p>
+                                <div class="accordion__block">
+                                    <p>Уделяет особое внимание этой сфере, развивает новые технологии, оптимально подходящие для производства автокомпонентов.</p>
+                                    <p>Уделяет особое внимание этой сфере, развивает новые технологии, оптимально подходящие для производства автокомпонентов.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__btn">Потребительские товары<div><span></span><span></span></div></button>
+                        <div class="accordion__wrapper">
+                            <div class="accordion__panel">
+                                <p>Lorem ipsum...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__btn">Высокоточные изделия<div><span></span><span></span></div></button>
+                        <div class="accordion__wrapper">
+                            <div class="accordion__panel">
+                                <p>Lorem ipsum...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__btn">Упаковка<div><span></span><span></span></div></button>
+                        <div class="accordion__wrapper">
+                            <div class="accordion__panel">
+                                <p>Lorem ipsum...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="usage__right"></div>
+            </div>
+        </div>
+    </div>
+</section>
+			<section class="contacts">
+    <div class="container">
+        <div class="contacts__holder">
+            <div class="contacts__left">
+                <h2 class="contacts__title title">Контакты</h2>
+                <div class="contacts__info">Официальное представительство L.K. Machinery в России:</div>
+                <div class="contacts__name">
+                    <span>
+                        <img src="img/main/contacts-logo.svg" alt="Логотип L.K. Machinery">
+                    </span>
+                    ЛК Машинери РУС
+                </div>
+                <div class="contacts__brands">
+                    <div class="about__brand">CNC</div>
+                    <div class="about__brand">IMM</div>
+                    <div class="about__brand">DCM</div>
+                </div>
+                <div class="contacts__about">
+                    <div class="contacts__office">
+                        <div class="contacts__subtitle">Адрес офиса</div>
+                        <div class="contacts__address">Москва, Волгоградский проспект, д. 43к3, офис 1405</div>
+                    </div>
+                    <div class="contacts__store">
+                        <div class="contacts__subtitle">Склад</div>
+                        <div class="contacts__address">142032 Московская область, г. Домодедово, д. Заболотье ул шоссейная, д.10</div>
+                    </div>
+                </div>
+                <div class="contacts__information">
+                    <div class="contacts__time">
+                        <div class="contacts__header">
+                            Время работы
+                        </div>
+                        <div class="contacts__regime">
+                            ПН-ПТ 08:00 — 17:00
+                        </div>
+                    </div>
+                    <div class="contacts__call">
+                        <a href="tel:74955586178" class="contacts__phone">+7 (495) 558-61-78</a>
+                        <a href="tel:74955586178" class="contacts__phone">+7 (495) 558-61-78</a>
+                    </div>
+                </div>
+                <div class="contacts__social">
+                    <div class="contacts__social-wrap">
+                        <div class="contacts__header">
+                            Соцсети
+                        </div>
+                        <a href="#" class="contacts__soc-link">
+                            <img src="/img/main/youtube.svg" alt="Youtube">
+                        </a>
+                    </div>
+                    <div class="contacts__social-wrap">
+                        <a href="mailto:info@lkmachinery.ru" class="contacts__link">info@lkmachinery.ru</a>
+                        <a href="https://lk.world" class="contacts__link">lk.world</a>
+                    </div>
+                </div>
+            </div>
+            <div class="contacts__right">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A2364152f60cf3aeecad04b3f54b2a656b12bf3f482aafe75931d294f7cc2b1e2&amp;source=constructor" width="833" height="626" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+		</div>
+	</main>
+	<section class="modal" data-modal="1">
+    <div class="modal__top">
+        <button class="modal__close js-modal-close">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.33325 5.33325L26.6666 26.6666M26.6666 5.33325L5.33325 26.6666" stroke="white" stroke-width="2.66667" stroke-linecap="round"/>
+            </svg>
+        </button>
+    </div>
+    <div class="modal__middle">
+        <div class="modal__title">Заполните форму и мы свяжемся с Вами</div>
+        <form class="modal__form">
+            <div class="modal__item">
+                <input type="text" class="modal__input" placeholder="ФИО">
+            </div>
+            <div class="modal__item">
+                <input type="text" class="modal__input tel" placeholder="+7 (495) 558-61-79">
+            </div>
+            <div class="modal__item">
+                <input type="text" class="modal__input" placeholder="E-mail">
+            </div>
+            <div class="modal__item modal__item-checkbox">
+                <input id="agree" type="checkbox" class="modal__checkbox">
+                <label class="modal__label" for="agree">Вы даете свое <span>согласие</span> на обработку персональных данных</label>
+            </div>
+            <div class="modal__item modal__item-checkbox">
+                <input id="confirm" type="checkbox" class="modal__checkbox">
+                <label class="modal__label" for="confirm">Подтверждаете, что ознакомлены с <span>условиями</span> конфиденциальности</label>
+            </div>
+            <input class="modal__submit btn" type="submit" value="Отправить">
+        </form>
+    </div>
+</section>
+<section class="overlay js-overlay-modal"></section>
+<section class="call">
+	<div class="container">
+		<div class="call__top">
+			<div class="call__title">
+				Запросите цены прямо сейчас!
+			</div>
+			<div class="call__text">
+				Успейте купить оборудование L.K. Machinery по лучшим ценам!
+			</div>
+		</div>
+	</div>
+	<form class="call__form form-call">
+		<div class="form-call__wrapper">
+			<div class="form-call__item">
+				<input type="text" class="form-call__input" placeholder="ФИО">
+			</div>
+			<div class="form-call__item">
+				<input type="text" class="form-call__input tel" placeholder="+7 (812) 335-48-05">
+			</div>
+			<div class="form-call__item">
+				<input type="text" class="form-call__input" placeholder="Email">
+			</div>
+		</div>
+		<div class="container">
+			<div class="form-call__bottom">
+				<a href="#" class="form-call__policy">Политика конфиденциальности</a>
+				<input type="submit" class="form-call__submit btn" value="Получить цены">
+			</div>
+		</div>
+	</form>
+</section>
+<footer class="footer">
+	<div class="container">
+		<div class="footer__top">
+			<ul class="footer__nav">
+				<li><a href="#" class="link">О компании</a></li>
+				<li><a href="#" class="link">Оборудование</a></li>
+				<li><a href="#" class="link">Склад</a></li>
+				<li><a href="#" class="link">Сервис</a></li>
+				<li><a href="#" class="link">Карьера</a></li>
+				<li><a href="#" class="link">Новости</a></li>
+				<li><a href="#" class="link">Контакты</a></li>
+			</ul>
+			<div class="footer__up">
+				Наверх <span>
+					<svg xmlns="http://www.w3.org/2000/svg" width="79" height="79" viewBox="0 0 79 79" fill="none">
+						<circle cx="39.5" cy="39.5" r="39" transform="matrix(0 -1 -1 0 79 79)" stroke="#BABABA"/>
+						<path d="M49 44L41.441 36.3506C40.693 35.5936 39.4831 35.555 38.6883 36.2628L30 44" stroke="#BABABA" stroke-width="3" stroke-linecap="round"/>
+					</svg>
+				</span>
+			</div>
+		</div>
+		<div class="footer__middle">
+			<div class="footer__logo">
+				<img src="img/footer-logo.png" alt="Логотип L.K. Machinery">
+			</div>
+			<div class="footer__navigation">
+				<div class="footer__item">
+					<div class="footer__subtitle">
+						Обрабатывающие центры
+					</div>
+					<ul class="footer__list">
+						<li><a href="#">Вертикальные ОЦ</a></li>
+						<li><a href="#">Токарные ОЦ</a></li>
+						<li><a href="#">Сверильно-фрезерные ОЦ</a></li>
+						<li><a href="#">5-ти осевые ОЦ</a></li>
+						<li><a href="#">Горизонтальные ОЦ</a></li>
+						<li><a href="#">Портальные ОЦ</a></li>
+					</ul>
+				</div>
+				<div class="footer__item">
+					<div class="footer__subtitle">
+						Термопластавтоматы
+					</div>
+					<ul class="footer__list">
+						<li><a href="#">POTENZA</a></li>
+						<li><a href="#">FORZA</a></li>
+						<li><a href="#">LENA</a></li>
+						<li><a href="#">EFFECTA</a></li>
+						<li><a href="#">ELETTRICA</a></li>
+						<li><a href="#">DOPPIO</a></li>
+						<li><a href="#">VARIA</a></li>
+					</ul>
+				</div>
+				<div class="footer__item">
+					<div class="footer__subtitle">
+						Машины ЛПД
+					</div>
+					<ul class="footer__list">
+						<li><a href="#">IMPRESS III</a></li>
+						<li><a href="#">IMPRESS PLUS</a></li>
+						<li><a href="#">AVIS II</a></li>
+						<li><a href="#">CLASSIK III</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer__contacts">
+				<div class="footer__phone"><a href="tel:84955586178">+7 (495) 558-61-78</a></div>
+				<div class="footer__phone"><a href="tel:84955586179">+7 (495) 558-61-79</a></div>
+				<div class="footer__link"><a href="mailto:info@lkmachinery.ru">info@lkmachinery.ru</a></div>
+				<div class="footer__link"><a href="https://lk.world">lk.world</a></div>
+				<div class="footer__address">Москва, Волгоградский проспект, д. 43к3, офис 1405</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			@ <span id="current-year">2020</span> L.K. Machinery / ООО «ЛК Машинери Рус» официальное представительство в России
+		</div>
+	</div>
+</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="./js/index.bundle.js"></script>
+</body>
+
+</html>
